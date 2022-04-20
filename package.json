@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "antd": "^4.19.5",
+    "formik": "^2.2.9",
+    "formik-antd": "^2.0.4"
+  }
+}

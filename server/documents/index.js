@@ -1,4 +1,4 @@
-module.exports = ({ name, email, department, age }) => {
+module.exports = ({ fname, lname, email, department, status }) => {
     const today = new Date();
 return `
     <!doctype html>
@@ -86,7 +86,7 @@ return `
                    <td colspan="2">
                       <table>
                          <tr>
-                            <td class="title"><img  src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fen%2F0%2F0a%2FUniversity_of_Eldoret_Administration_Block.jpeg&imgrefurl=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FUniversity_of_Eldoret&tbnid=sALRG2VnO4I-_M&vet=12ahUKEwiL0OfU2aD3AhVIXxoKHfiSAHUQMygBegUIARC1AQ..i&docid=4Ijl-gobvJGy-M&w=433&h=230&q=uoe%20logo&ved=2ahUKEwiL0OfU2aD3AhVIXxoKHfiSAHUQMygBegUIARC1AQ"
+                            <td class="title"><img  src="https://developersafrica.co.ke/uoe.png"
                                style="width:100%; max-width:156px;"></td>
                             <td>
                                Datum: ${`${today.getDate()}. ${today.getMonth() + 1}. ${today.getFullYear()}.`}
@@ -100,7 +100,7 @@ return `
                       <table>
                          <tr>
                             <td>
-                               Customer name: ${name}
+                               Customer name: ${fname}
                             </td>
                             <td>
                                Receipt number: 
@@ -114,20 +114,25 @@ return `
                    <td>Value</td>
                 </tr>
                 <tr class="item">
-                   <td>Name:</td>
-                   <td>${name}</td>
+                   <td>First Name:</td>
+                   <td>${fname}</td>
+                </tr>
+                <tr class="item">
+                   <td>Last Name:</td>
+                   <td>${lname}</td>
                 </tr>
                 <tr class="item">
                    <td>Email:</td>
                    <td>${email}</td>
                 </tr>
                 <tr class="item">
-                <td>Age:</td>
-                <td>${age}fgc</td>
-             </tr>
-                <tr class="item">
                 <td>Department:</td>
                 <td>${department}</td>
+             </tr>
+             </tr>
+                <tr class="item">
+                <td>Status:</td>
+                <td>${status}</td>
              </tr>
              </table>
              <br />
