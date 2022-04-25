@@ -19,7 +19,9 @@ body {
 }
 
 h1{
-  font-weight:400;
+  font-weight:700;
+  font-size: 40px;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   padding-top:0;
   margin-top:0;
   font-family: 'Roboto Slab', serif;
@@ -55,7 +57,7 @@ h1{
 
 section {
   padding: 80px ;
-  max-width: 550px;
+  max-width:980px;
   margin: 30px auto;
   background:white;
   background:rgba(255,255,255,0.9);
@@ -67,9 +69,21 @@ section {
 
 
 input {
-  width: 100%;
+  width: 100%; 
   margin: 7px 0px;
   display: inline-block;
+  padding: 12px 55px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  font-size: 1em;
+  font-family:inherit;
+  background:white;
+}
+input [type="file"]{
+  width: 10%; 
+  margin: 7px 0px;
+  display: none;
   padding: 12px 25px;
   box-sizing: border-box;
   border-radius: 5px;
@@ -78,8 +92,89 @@ input {
   font-family:inherit;
   background:white;
 }
+.attachment input {
+  display: flex;
+  width: 40%;
+  flex-direction: row;
+  /* margin-left: 60%; */
+  margin-top: 20px;
+}
+.attachment button {
+  padding: 20px;
+  background-color: rgb(186, 113, 11);
+  color: aliceblue;
+  outline: none;
+  /* border: 1px solid rgb(186, 113, 11); */
+  border-radius:9px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 80%;
+  margin-top: -40px;
+}
 
 p{
   text-align:justify;
-margin-top:0;
+  margin-top:-40px;
+  margin-right:20px;
+}
+.intro h2 {
+  margin-top: -25px;
+}
+input[type="text"] {
+    margin-left: 10px;
+    /* width: 100%; */
+  
+}
+section {
+  display: flex;
+  flex-direction: row;
+}
+section .staff {
+  display: flex;
+  flex-direction: column;
+}
+section h2 {
+  text-align: center;
+  color: rgba(171, 121, 27, 0.883);
+  font-family: 900;
+  margin-left: 250px;
+}
+section #performance {
+  display: flex;
+  flex-direction: row;
+  margin-left: -90px;
+}
+#descDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+section label {
+  font-size: 14px;
+}
+section #ind {
+  text-align: left;
+}
+
+.innerDiv2 input[type="text"] {
+  border: 0;
+}
+.innerDiv2 input[type="text"]:focus{
+  outline: none;
+}
+.exp {
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  section {
+    display: flex;
+    flex-direction: column;
+  }
+  section h2 {
+    text-align: center;
+    color: rgba(171, 121, 27, 0.883);
+    font-family: 900;
+    margin-left: 0px;
+  }
 }
